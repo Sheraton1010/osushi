@@ -1,89 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
-  <title>浅草　都鮨　</title>
-  <meta name="description" content="新鮮なネタと赤酢のシャリを楽しめる江戸前寿司屋">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="都寿司のこだわり。鮮魚、赤酢のしゃり、職人の技についてご紹介します。">
+  <title>こだわり | 都寿司</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html"><span class="brand-mark">都</span><span><strong>都寿司</strong><small>Miyako Sushi</small></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+      <a href="index.html">ホーム</a><a href="menu.html">お品書き</a><a href="kodawari.html" aria-current="page">こだわり</a><a href="contact.html">お問い合わせ</a><a class="nav-tel" href="tel:000-1234-5678">000-1234-5678</a>
+    </nav>
+  </header>
 
-<body id="kodawari">
-  <div id="wrapper">
-    <header>
-      <div class="container">
-        <div class="title-block">
-          <h1><a href="index.html">都鮨</a></h1>
-        </div>
-        <div class="hamburger" id="open_nav">
-          <img src="img/menu.svg" alt="">
-        </div>
-      </div><!-- /.conteiner-->
-    </header>
-  </div>
-  <div id="kodawari_homewrapper" class="homewrapper">
-    <h1 class="menuwrapper">こだわり</h1>
-  </div>
-  <div id="wrapperbox_menu">
-    <div class="wrapperbox_menu">
-      <h2>築地直送の新鮮なネタ</h2>
-      <div class="flexpolicy">
-        <p>テキストテキストテキストテキストテキストテキストテキスト</p>
-        <p><img src="img/magurokaitai.jpg" alt=""></p>
-        　
+  <main>
+    <section class="page-hero">
+      <img src="img/kodawari1600syokunin.jpg" alt="寿司職人の手元">
+      <div>
+        <p class="eyebrow">Policy</p>
+        <h1>こだわり</h1>
+        <p>素材、しゃり、手仕事。すべての工程に意味を持たせています。</p>
       </div>
-    </div>
-    <div class="wrapperbox_menu">
-      <h2>赤酢を使った江戸前寿司</h2>
-      <div class="flexpolicy">
-        <p>テキストテキストテキストテキストテキストテキストテキスト</p>
-        <p><img src="img/sumeshi.jpg" alt=""></p>
-      </div>
-    </div>
-    <div class="wrapperbox_menu">
-      <h2>職人の匠の技</h2>
-      <div class="flexpolicy">
-        <p>テキストテキストテキストテキストテキストテキストテキスト</p>
-        <p><img src="img/syokunin2.jpg" alt=""></p>
+    </section>
 
-      </div>
-    </div>
-  </div>
+    <section class="section story-list">
+      <article>
+        <img src="img/magurokaitai.jpg" alt="まぐろを捌く職人">
+        <div><span>01</span><h2>産地直送の新鮮なネタ</h2><p>市場に集まる魚の中から、その日おいしいものを見極めます。脂の乗り、香り、食感を確かめ、寿司として一番よい状態でお出しします。</p></div>
+      </article>
+      <article>
+        <img src="img/sumeshi.jpg" alt="赤酢のしゃり">
+        <div><span>02</span><h2>赤酢を使った江戸前しゃり</h2><p>赤酢のコクとまろやかな酸味が、魚の旨みを自然に引き立てます。口の中でほどける温度と固さを大切にしています。</p></div>
+      </article>
+      <article>
+        <img src="img/syokunin2.jpg" alt="寿司を握る職人">
+        <div><span>03</span><h2>職人の細やかな手仕事</h2><p>切り付け、酢締め、煮切り、握り。見えにくい工程まで丁寧に積み重ね、また食べたくなる余韻を目指します。</p></div>
+      </article>
+    </section>
+  </main>
 
-  <div id="kodawari-content" class="top">
-    <a href="#" id="topBtn">トップ</a>
-  </div>
-
-  <nav id="nav">
-    <div class="logo"><img src="img/toro.dorowa-.jpg"></div>
-    <ul>
-      <li><a href="index.html">ホーム</a></li>
-      <li><a href="menu.html">メニュー</a></li>
-      <li><a href="kodawari.html">こだわり</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-    </ul>
-  </nav>
-
-  <nav>
-    <ul class="botomm-nav">
-      <li><a href="index.html">ホーム</a></li>
-      <li><a href="menu.html">お料理・飲み物</a></li>
-      <li><a href="kodawari.html">都鮨について</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-      <li><a href="index.html#map">アクセス</a></li>
-    </ul>
-  </nav>
-
-  <footer>
-    <div class="wrapper">
-      <p><small>&copy; Miyako sushi</small></p>
-    </div>
-  </footer>
-
-      <script type="text/javascript" src="js/main.js" charset="uft-8"></script>
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-      <script type="text/javascript" src="slick/slick.min.js"></script>
-
+  <footer class="site-footer"><p>&copy; Miyako Sushi</p><a href="#top" class="back-to-top">ページ上部へ</a></footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

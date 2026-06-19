@@ -1,160 +1,117 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="UTF-8">
-
-  <title>浅草　都鮨</title>
-  <meta name="description" content="新鮮なネタと赤酢のシャリを楽しめる江戸前寿司屋">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-  <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="都寿司は、江戸前の仕事と旬の魚を大切にする寿司店です。献立、こだわり、アクセスをご案内します。">
+  <title>都寿司 | 江戸前の仕事を味わう寿司店</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-  <header>
-    <div id="head_line">
-      <div id="head_line_shopname"><a name="top">都鮨</a></div>
-      <div id="head_line_contact"><a href="tel:000-1234-5678">ご予約・お問い合わせ　000-1234-5678</a></div>
-    </div>
-    <nav>
-        <div class="drawer">        
-            <input type="checkbox" name="navToggle" id="navToggle" class="nav-toggle">
-            <label for="navToggle" class="btn-burger">
-              <span class="icon"></span>            
-            </label>        
-             
-            <nav class="nav1">                    
-             <ul class="nav-list1">            
-              <li><a href="index.html">ホーム</a></li>                
-              <li><a href="menu.html">お料理</a></li>                
-              <li><a href="menu.html">お飲み物</a></li>                
-              <li><a href="kodawari.html">都鮨について</a></li>                
-              <li><a href="contact.html">お問い合わせ</a></li>
-              <li><a href="#map">アクセス</a></li>                 
-             </ul>            
-            </nav>        
-          </div>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="都寿司 ホーム">
+      <span class="brand-mark">都</span>
+      <span>
+        <strong>都寿司</strong>
+        <small>Miyako Sushi</small>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="メインナビゲーション">
+      <a href="index.html" aria-current="page">ホーム</a>
+      <a href="menu.html">お品書き</a>
+      <a href="kodawari.html">こだわり</a>
+      <a href="contact.html">お問い合わせ</a>
+      <a class="nav-tel" href="tel:000-1234-5678">000-1234-5678</a>
     </nav>
   </header>
 
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/1600main.jpg" class="d-block w-100" alt="...">
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="img/sp.sushi.jpg" media="(max-width: 640px)">
+        <img src="img/1600main.jpg" alt="握り寿司を美しく盛り付けた一皿">
+      </picture>
+      <div class="hero-copy">
+        <p class="eyebrow">Fresh fish, careful work</p>
+        <h1>旬を握り、江戸前の余韻を届ける。</h1>
+        <p>豊洲から届く魚を見極め、赤酢のしゃりと職人の手仕事で一貫ずつ仕立てます。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="menu.html">お品書きを見る</a>
+          <a class="button ghost" href="#location">アクセス</a>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/1600main2.jpg" class="d-block w-100" alt="...">
+    </section>
+
+    <section class="section intro">
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2>気軽さと上質さが同居する、街の寿司店。</h2>
       </div>
-      <div class="carousel-item">
-        <img src="img/top1600sashimi.jpg" class="d-block w-100" alt="...">
+      <p>都寿司では、仕入れから仕込み、握り、盛り付けまでの一つひとつを丁寧に重ねています。普段の食事にも、大切な日の一席にも選びやすいよう、セットメニューから旬の一品料理まで幅広くご用意しています。</p>
+    </section>
+
+    <section class="section feature-grid" aria-label="都寿司の特徴">
+      <article>
+        <img src="img/magurokaitai.jpg" alt="まぐろを丁寧に捌く様子">
+        <div>
+          <h3>目利きした鮮魚</h3>
+          <p>季節ごとに旨みの乗った魚を選び、素材の個性を活かす仕込みでお出しします。</p>
+        </div>
+      </article>
+      <article>
+        <img src="img/sumeshi.jpg" alt="寿司に使うしゃり">
+        <div>
+          <h3>赤酢のしゃり</h3>
+          <p>まろやかな酸味と深い香りが、魚の脂や香りを引き立てます。</p>
+        </div>
+      </article>
+      <article>
+        <img src="img/top1600sake.jpg" alt="日本酒と料理">
+        <div>
+          <h3>料理に寄り添う酒</h3>
+          <p>日本酒、焼酎、ビールなど、寿司と相性のよい飲み物を揃えています。</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section split">
+      <div class="split-copy">
+        <p class="eyebrow">News</p>
+        <h2>営業時間のお知らせ</h2>
+        <p>ランチとディナーで営業しています。季節の仕入れ状況により、当日のおすすめは店頭またはお電話でご案内します。</p>
+        <a class="text-link" href="contact.html">お問い合わせへ</a>
       </div>
-      <div class="carousel-item">
-        <img src="img/top1600sake.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+      <img src="img/1600uni.jpg" alt="うにを使った寿司">
+    </section>
 
-  <div id="main_homewrapper" class="main_homewrapper">
-    <h1 id="mainwrapper"><a href="kodawari.html">こだわり</a></h1>
-    <p class="pc-only">都鮨は、仕入れから海鮮がお客様のお口に届くまでの全ての工程において、
-      こだわりを持って接しております。<br>
-      豊洲市場に集まる「海鮮」の中から、板前が素材を選び仕入れ、都鮨伝統の「仕事」を施します。
-      使われるしゃりは独自製法の「赤酢」を使用し作られる「赤しゃり」。
-      都鮨寿司だけでしか味わえないまろやかな味わいです。
-      また、都鮨では「炙り」などの調理法に加え、「岩塩」や「醤油」などの調味料にも渡り、
-      細やかなこだわりを追求しています。一つ一つの行程全てがつきぢ神楽寿司のこだわりにより出来上がっています。
-      その他にも、新鮮な海鮮の中でも、特に普段なかなか食べることができない「高級」な海鮮や、普段の生活では見ることのない「珍味」なども取り揃えており、お客様に様々な形で提供しております。何故都鮨がここまでこだわりを追求するのでしょうか。それは、仕入れからお客様の口に料理が届くまで、一切の妥協なくお客様と接する覚悟を持っているからです。<br>
-      「本当に美味しいものをお客様に食べていただきたい」
-      その思いの元、都鮨寿司はお客様に私たちのこだわりを提供しております。</p>
-    <p class="sp-only">都鮨は、仕入れから海鮮がお客様のお口に届くまでの全ての工程において、
-      こだわりを持って接しております。<br>
-      豊洲市場に集まる「海鮮」の中から、板前が素材を選び仕入れ、都鮨伝統の「仕事」を施します。
-      使われるしゃりは独自製法の「赤酢」を使用し作られる「赤しゃり」。
-      都鮨寿司だけでしか味わえないまろやかな味わいです。</p>
-  </div>
-
-  <div id="main_infomation" class="infomation">
-    <h1 id="infotext">お知らせ</h1>
-    <p>いつも都鮨をご利用いただきありがとうございます。<br>
-      政府発令による緊急事態宣言に伴い、営業時間の変更と臨時休業についてお知らせいたします。<br>
-      期間：2月1日（月曜日）～3月21日(日曜日)</p>
-    <a href="contact.html" class="info">お問い合わせフォーム</a>
-  </div>
-
-
-  <section id="location">
-    <div class="wrapper">
+    <section class="section location" id="location">
       <div class="location-info">
-        <h3>都鮨</h3>
+        <p class="eyebrow">Access</p>
+        <h2>店舗情報</h2>
         <dl>
-          <dt>住所</dt>
-          <dd>東京都台東区雷門3-3-8<br></dd>
+          <div><dt>住所</dt><dd>東京都台東区雷門3-3-8</dd></div>
+          <div><dt>電話</dt><dd><a href="tel:000-1234-5678">000-1234-5678</a></dd></div>
+          <div><dt>最寄り</dt><dd>浅草駅 徒歩1分</dd></div>
+          <div><dt>営業時間</dt><dd>ランチ 11:30-14:30 / ディナー 16:00-23:00</dd></div>
+          <div><dt>定休日</dt><dd>年中無休</dd></div>
         </dl>
-        <dl>
-          <dt>電話番号</dt>
-          <dd>0570-55-3855</dd>
-        </dl>
-        <dl><a name="map">
-            <dt>アクセス</dt>
-            <dd>地下鉄銀座線 浅草駅 徒歩1分<br>東武伊勢崎線（東武スカイツリーライン）<br class="br-sp"> 浅草駅 徒歩1分</dd>
-        </dl>
-        <dl>
-          <dt>営業時間</dt>
-          <dd>月～金<br />
-            ランチ　11:30～14:30（L.O.14:00）<br>
-            ディナー　16:00～23:00<br />
-            （L.O.22:15、ドリンクL.O.22:30）<br>
-            <br />
-            土・祝前日・祝日<br />
-            ディナー　11:30～23:00<br />
-            （L.O.22:15、ドリンクL.O.22:30）<br>
-          </dd>
-        </dl>
-        <dl>
-          <dt>定休日</dt>
-          <dd>年中無休</dd>
-        </dl>
-      </div><!-- /.location-info -->
-
-      <div class="location-map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.485965190785!2d139.797503!3d35.710931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec1a4463df1%3A0x6c0d289a8292810d!2z5rWF6I2J5a-6!5e0!3m2!1sja!2sjp!4v1616883623329!5m2!1sja!2sjp"
-          width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-    </div><!-- /.wrapper -->
-  </section><!-- /#location -->
+      <div class="map-frame">
+        <iframe title="都寿司周辺地図" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.485965190785!2d139.797503!3d35.710931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec1a4463df1%3A0x6c0d289a8292810d!2z5rWF6I2J5a-6!5e0!3m2!1sja!2sjp!4v1616883623329!5m2!1sja!2sjp" loading="lazy" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
 
-
-  <div id="content" class="top">
-    <a href="#" id="topBtn">トップ</a>
-  </div>
-
-  <nav>
-    <ul class="botomm-nav">
-      <li><a href="#top">ホーム</a></li>
-      <li><a href="menu.html">お料理・飲み物</a></li>
-      <li><a href="kodawari.html">都鮨について</a></li>
-      <li><a href="contact.html">お問い合わせ</a></li>
-      <li><a href="#map">アクセス</a></li>
-    </ul>
-  </nav>
-
-  <footer>
-    <div class="wrapper">
-      <p><small>&copy; Miyako sushi</small></p>
-    </div>
+  <footer class="site-footer">
+    <p>&copy; Miyako Sushi</p>
+    <a href="#top" class="back-to-top">ページ上部へ</a>
   </footer>
-
-      <script src="js/main.js"></script>
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-      <script type="text/javascript" href="slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
